@@ -27,7 +27,7 @@ Backend service built with Node.js and Express that aggregates financial data fr
 2. **Environment Setup**
    Ensure an `.env` file exists at the root.
    ```env
-   PORT=3000
+   PORT=5000
    ```
 
 3. **Run the Server (Development)**
@@ -86,7 +86,7 @@ The server emits a real-time event named `portfolioUpdate` every 15 seconds.
 ```javascript
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+const socket = io("http://localhost:5000");
 
 socket.on("portfolioUpdate", (data) => {
     console.log("Live update received:", data);
