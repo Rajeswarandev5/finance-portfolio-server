@@ -96,3 +96,4 @@ socket.on("portfolioError", (error) => {
     console.error("Server encountered scraping issues:", error);
 });
 ```
+https://finance-portfolio-server-production.up.railway.app/
